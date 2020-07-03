@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MvcMovie.Models;
 
 namespace MvcMovie.Data
 {
-    public class MvcMovieContext : DbContext
+    public class MvcMovieContext : IdentityDbContext<IdentityUser>
     {
         public MvcMovieContext (DbContextOptions<MvcMovieContext> options)
             : base(options)

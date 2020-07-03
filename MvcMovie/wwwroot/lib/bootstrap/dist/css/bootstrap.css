@@ -9757,7 +9757,10 @@ button.bg-dark:focus {
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+
 }
 
 @media (min-width: 576px) {
